@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="../static/css/cart.css">
+
+
+	 <!-- navbar -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/dashboard.css">
+    <!-- tab dynamic -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <div class="block-heading">
+		<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom"> 
+		    <a class="navbar-brand ml-2 font-weight-bold" href="#">
+		        <span id="burgundy"></span>
+		        <span id="orange">iZiRestaurant</span>
+		    </a> 
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor" aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation"> 
+		        <span class="navbar-toggler-icon"></span> 
+		    </button>
+
+		    <div class="collapse navbar-collapse" id="navbarColor">
+		        <ul class="navbar-nav">
+		            <li class="nav-item rounded bg-light search-nav-item"><input type="text" id="search" class="bg-light" placeholder="Search bread, cakes, desserts"><span class="fa fa-search text-muted"></span></li>
+		            <li class="nav-item "><a class="nav-link" href="cart.html"><span class="fa fa-shopping-cart"></span><span class="text">Cart</span></a> </li>
+		        </ul>
+		    </div>
+		</nav>
+    </div>
+
+	<main class="page">
+	 	<section class="shopping-cart dark">
+	 		<div class="container">
+		
+				<button><a href="dashboard.html">Return</a></button>
+
+		        <div class="content">
+
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+
+	 							<!-- here to generation the code for list of items in the tab product and all of item in the tab items-->
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="../static/img/image.jpg">
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Name of plats</a>
+								 							<div class="product-info">
+									 							<!--<div><span class="value">Name of plats</span></div>
+									 							 <div>RAM: <span class="value">4GB</span></div>
+									 							<div>Memory: <span class="value">32GB</span></div> -->
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quantity" type="number" value ="1" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$120</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+
+				 			</div>
+			 			</div>
+
+			 			<!-- summary, return how many to pay -->
+			 			<div class="col-md-12 col-lg-4">			 			
+			 				<div class="summary">
+			 					<h3>Summary</h3>
+			 					<div class="summary-item"><span class="text-span">Subtotal</span><span class="price">$360</span></div>
+			 					<div class="summary-item"><span class="text-span">Tax</span><span class="price">$0</span></div>
+			 					<div class="summary-item"><span class="text-span">Total</span><span class="price">$360</span></div>
+			 					<button type="button" class="btn btn-primary btn-lg btn-block">Checkout</button>
+				 			</div>
+			 			</div>
+
+		 			</div> 
+		 		</div>
+
+	 		</div>
+		</section>
+	</main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<!-- source https://epicbootstrap.com/snippets/shopping-cart -->
