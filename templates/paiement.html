@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tab dynamic -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- for the button -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- navbar -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/dashboard.css">
+
+    <!-- Payments details -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/payments.css">
+
+    <!-- Tracking bar -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/css/bar.css">
+
+
+
+    <title>Paiement</title>
+</head>
+<body>
+    <!-- navigateur bar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom"> 
+        <a class="navbar-brand ml-2 font-weight-bold" href="#">
+            <span id="burgundy"></span>
+            <span id="orange">iZiRestaurant</span>
+        </a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor" aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarColor">
+            <ul class="navbar-nav">
+                <li class="nav-item rounded bg-light search-nav-item"><input type="text" id="search" class="bg-light" placeholder="Search bread, cakes, desserts"><span class="fa fa-search text-muted"></span></li>
+                <li class="nav-item "><a class="nav-link" href="cart.html"><span class="fa fa-shopping-cart"></span><span class="text">Cart</span></a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- the contenu of paiement -->
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="nav-item">
+            <a href="#infos" class="nav-link active" data-bs-toggle="tab">Home</a>
+        </li>
+        <li class="nav-item" id="itemPaiment">
+            <a href="#payments" class="nav-link " data-bs-toggle="tab" id="activePay">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tracking" class="nav-link " data-bs-toggle="tab" id="activeTrack" >Messages</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="infos">
+            
+            <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Vous êtes sur quel table ?</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ex: T04">
+                </div>
+            </form>
+
+            <button id="btnPayment">Clicked</button>
+        </div>
+        <div class="tab-pane fade" id="payments">
+            <!-- Payment Details -->
+            <div class="payment-center">
+                <div class="container p-0">
+                    <div class="card px-4">
+                        <p class="h8 py-3">Payment Details</p>
+                        <div class="row gx-3">
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <p class="text-pay mb-1">Person Name</p> <input class="form-control mb-3" type="text" placeholder="Name" value="Barry Allen">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <p class="text-pay mb-1">Card Number</p> <input class="form-control mb-3" type="text" placeholder="1234 5678 435678">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <p class="text-pay mb-1">Expiry</p> <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <p class="text-pay mb-1">CVV/CVC</p> <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="btn btn-primary mb-3" id="btnTrack"> <span class="ps-3">Pay $243</span> <span class="fas fa-arrow-right"></span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="tracking">
+
+            <div class="container px-1 px-md-4 py-5 mx-auto">
+                <div class="card">
+                    <div class="row d-flex justify-content-between px-3 top">
+                        <div class="d-flex">
+                            <h5>ORDER <span class="text-primary font-weight-bold">#Y34XDHR</span></h5>
+                        </div>
+                        <div class="d-flex flex-column text-sm-right">
+                            <p class="mb-0">Expected Arrival <span id="datePicker" >01/12/19</span></p>
+                        <!--  display date today in the tracking system -->
+                         <script type="text/javascript">
+                             n =  new Date();
+                            y = n.getFullYear();
+                            m = n.getMonth() + 1;
+                            d = n.getDate();
+                            document.getElementById("datePicker").innerHTML = m + "/" + d + "/" + y;
+                         </script>
+                        </div>
+                    </div> <!-- Add class 'active' to progress -->
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <ul id="progressbar" class="text-center">
+                                <li class="active step0">
+                                    <div class="row d-flex icon-content">
+                                        <div class="d-flex flex-column">
+                                            <p class="font-weight-bold">Order <br> Processed</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step0">
+                                    <div class="row d-flex icon-content">
+                                        <div class="d-flex flex-column">
+                                            <p class="font-weight-bold">Order <br> Shipped</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step0">
+                                    <div class="row d-flex icon-content">
+                                        <div class="d-flex flex-column">
+                                            <p class="font-weight-bold">Order <br> En Route</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step0">
+                                    <div class="row d-flex icon-content">
+                                        <div class="d-flex flex-column">
+                                            <p class="font-weight-bold">Order <br> Arrived</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <!-- <div class="row justify-content-between top">
+                        <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/9nnc9Et.png">
+                            <div class="d-flex flex-column">
+                                <p class="font-weight-bold">Order<br>Processed</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/u1AzR7w.png">
+                            <div class="d-flex flex-column">
+                                <p class="font-weight-bold">Order<br>Shipped</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/TkPm63y.png">
+                            <div class="d-flex flex-column">
+                                <p class="font-weight-bold">Order<br>En Route</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex icon-content"> <img class="icon" src="https://i.imgur.com/HdsziHP.png">
+                            <div class="d-flex flex-column">
+                                <p class="font-weight-bold">Order<br>Arrived</p>
+                            </div>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        //change to the tab payments
+        $('#btnPayment').click(function(){ //need to add popper           
+            var active = document.getElementById("activePay");          
+            active.classList.remove('nav-link', 'disabled');
+            active.classList.add('nav-link'); 
+            console.log( active.classList.show);
+
+            var profileTabElement = document.querySelector('#myTab a[href="#payments"]');
+            var profileTab = new bootstrap.Tab(profileTabElement);
+            profileTab.show();  
+	    })
+
+        //change to the tab payments
+        $('#btnTrack').click(function(){ //need to add popper           
+            var track = document.getElementById("activeTrack");          
+            track.classList.remove('nav-link', 'disabled');
+            track.classList.add('nav-link'); 
+            
+
+            var profileTabElement = document.querySelector('#myTab a[href="#tracking"]');
+            var profileTab = new bootstrap.Tab(profileTabElement);
+            profileTab.show();  
+	    })
+    </script>
+
+</body>
+</html>
+
+<!-- for form payments <source src="https://bbbootstrap.com/snippets/bootstrap-5-payment-form-gradient-button-91213875" type=""> -->
+<!-- for the tab dynamic <source src="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-tabs.php" type=""> -->
